@@ -4,9 +4,9 @@ public abstract class Card {
 	String firstName;
 	String lastName;
 	int pinCode;
-	long cardNr;
+	int cardNr;
 	boolean accessCode;
-	static long card = 1;
+	static int card = 1;
 	
 	public Card() {
 		firstName = "Lille";
@@ -29,7 +29,7 @@ public abstract class Card {
 	
 	@Override
 	public String toString() {
-		return "Card [firstName= " + firstName + " " + lastName + ", PINcode= " + pinCode + ", cardnumber= " + cardNr
+		return "Card [Name= " + firstName + " " + lastName + ", PINcode= " + pinCode + ", cardnumber= " + cardNr
 				+ ", accesscode= " + accessCode + "]";
 	}
 
